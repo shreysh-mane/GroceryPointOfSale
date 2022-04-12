@@ -31,7 +31,7 @@ public class Staffcontroller {
 		System.out.println("add to cart");
 		String result =  staffServiceInterface.addStaff(StaffUser);
 		
-		ResponseEntity<String> result1 = restTemplate.getForEntity("http://localhost:9002/grocery/api/product/getproduct/1", String.class);
+		ResponseEntity<String> result1 = restTemplate.getForEntity("http://product-service/grocery/api/product/getproduct/1", String.class);
 		return result1;
 	}
 	

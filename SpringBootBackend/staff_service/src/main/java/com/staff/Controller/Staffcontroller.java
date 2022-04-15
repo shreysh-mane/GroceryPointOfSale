@@ -27,18 +27,19 @@ public class Staffcontroller {
 	private RestTemplate restTemplate;
 		
 	@PostMapping("/addstaff")
-	public ResponseEntity<String> addStaffcontroller(@RequestBody StaffEntity StaffUser) {
-		System.out.println("add to cart");
-		String result =  staffServiceInterface.addStaff(StaffUser);
+	public String addStaffcontroller(@RequestBody StaffEntity StaffUser) {
 		
-		ResponseEntity<String> result1 = restTemplate.getForEntity("http://product-service/grocery/api/product/getproduct/1", String.class);
-		return result1;
+		String result =  staffServiceInterface.addStaff(StaffUser);
+		return "1";
+		
 	}
 	
-	@GetMapping("/getstaff/{id}")
-	public StaffEntity getStaffController(@PathVariable(value ="id") Long staffId) {
-		System.out.println("add to cart");
-		return staffServiceInterface.getStaffService(staffId);
+	@GetMapping("getstaff/{id}")
+	public ResponseEntity<String> getStaffController(@PathVariable(value ="id") Long staffId) {
+	
+		ResponseEntity<String> result1 = restTemplate.getForEntity("http://product-service/grocery/api/product/getproduct/1", String.class);
+		return result1;
+		
 		
 	}
 }

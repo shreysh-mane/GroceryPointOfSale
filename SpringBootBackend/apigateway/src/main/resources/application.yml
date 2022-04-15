@@ -1,0 +1,21 @@
+server:
+  port: 9000
+  
+eureka:
+  instance:
+    hostname: localhost
+    
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    geteway:
+       routes:
+         - id: staff-service
+           uri: lb://staff-service
+           predicates: 
+             - Path=grocery/api/staff/**
+         - id: PRODUCT-SERVICE
+           uri: lb://PRODUCT-SERVICE
+           preidcates:
+             - Path=/grocery/api/product/**

@@ -1,0 +1,54 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+
+<form (ngSubmit)="editstaff()">
+  <label>
+    <p class="label-txt">ENTER Name</p>
+    <input type="text" class="input" name="name" [(ngModel)]="update.name">
+    <div class="line-box">
+      <div class="line"></div>
+    </div>
+  </label>
+  <label>
+    <p class="label-txt">ENTER Email</p>
+    <input type="email" class="input" name="email" [(ngModel)]="update.email">
+    <div class="line-box">
+      <div class="line"></div>
+    </div>
+  </label>
+  <label>
+    <p class="label-txt">ENTER Address</p>
+    <input type="text" class="input" name="state" [(ngModel)]="update.state">
+    <div class="line-box">
+      <div class="line"></div>
+    </div>
+  </label>
+  <label>
+    <p class="label-txt">ENTER Mobile</p>
+    <input type="number" class="input" name="mobile" [(ngModel)]="update.mobile">
+    <div class="line-box">
+      <div class="line"></div>
+    </div>
+  </label>
+
+  
+
+  <label>
+    <p class="label-txt"> Enter Account No</p>
+    <input type="number" class="input" name="account" [(ngModel)]="update.account">
+    <div class="line-box">
+      <div class="line"></div>
+    </div>
+  </label>
+  <label>
+    <p class="label-txt"> Enter Addhar No</p>
+    <input type="number" class="input" name="addhar" [(ngModel)]="update.addhar">
+    <div class="line-box">
+      <div class="line"></div>
+    </div>
+  </label>
+  <button type="submit">EDIT</button>
+</form>

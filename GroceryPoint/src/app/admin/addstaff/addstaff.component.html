@@ -1,0 +1,51 @@
+<br>
+<br>
+<form action="" (ngSubmit)="staffAdd()" >
+<div class="container register-form">
+    <div class="form">
+        <div class="note">
+            <p>Add Staff</p>
+        </div>
+
+        <div class="form-content">
+            <div class="row">
+              
+                
+                <div class="col-md-6" style="margin-left: 25%;">
+                    <br> 
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Enter Name*" value="" name="name" [(ngModel)]="Staff.name">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <input type="number" class="form-control" placeholder="Account No *" value="" name="account no" [(ngModel)]="Staff.account">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Enter Email *" value="" name="emai" [(ngModel)]="Staff.email">
+                    </div>
+
+                    <br>
+                    <div class="form-group">
+                        <input type="number" class="form-control" placeholder="Addhar No *" value="" name="addhar_id" [(ngModel)]="Staff.addhar">
+                    </div>
+                
+                    <br>
+                    <div class="form-group">
+                      <textarea class="form-control" placeholder="Address" cols="40" rows="3" style="border-radius: 10px;" ></textarea>
+                    </div>
+                    <br> 
+                    <div class="form-group">
+                        <input type="number" class="form-control" placeholder="Contact Number *" value="" name="number" [(ngModel)]="Staff.mobile">
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <br>
+            <button style="margin-left: 25%;" type="submit" class="btnSubmit" value="ADD">ADD</button>
+            <!-- <input style="margin-left: 25%;" type="submit" class="btnSubmit" type="submit" name="" id="" value="ADD"> -->
+        </div>
+    </div>
+</div>
+</form> 

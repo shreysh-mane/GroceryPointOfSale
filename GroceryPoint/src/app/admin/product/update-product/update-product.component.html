@@ -1,0 +1,50 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<form (ngSubmit)="editProduct()">
+    <label>
+      <p class="label-txt">ENTER Name</p>
+      <input type="text" class="input" name="name" [(ngModel)]="edit.name">
+      <div class="line-box">
+        <div class="line"></div>
+      </div>
+    </label>
+    <label>
+      <p class="label-txt">ENTER Type</p>
+      <input type="text" class="input" name="type" [(ngModel)]="edit.type">
+      <div class="line-box">
+        <div class="line"></div>
+      </div>
+    </label>
+    <label>
+      <p class="label-txt">ENTER ID</p>
+      <input type="number" class="input" name="ids" [(ngModel)]="edit.ids">
+      <div class="line-box">
+        <div class="line"></div>
+      </div>
+    </label>
+    <label>
+      <p class="label-txt">ENTER Price</p>
+      <input type="number" class="input" name="price" [(ngModel)]="edit.price">
+      <div class="line-box">
+        <div class="line"></div>
+      </div>
+    </label>
+    <label>
+      <p class="label-txt">ENTER Quantity</p>
+      <input type="number" class="input" name="quantity" [(ngModel)]="edit.quantity">
+      <div class="line-box">
+        <div class="line"></div>
+      </div>
+    </label>
+    <!-- <label>
+      <p class="label-txt"> Contact Number</p>
+      <input type="number" class="input" name="numbeer" [(ngModel)]="edit.contactNumber">
+      <div class="line-box">
+        <div class="line"></div>
+      </div>
+    </label> -->
+    <button type="submit">EDIT</button>
+  </form>

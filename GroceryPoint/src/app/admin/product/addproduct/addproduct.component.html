@@ -1,0 +1,103 @@
+<form action="" (ngSubmit)="productAdd()">
+<section class="vh-100"  style=" padding-bottom: 200px;">
+    <div class="container h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-xl-9">
+  
+          <h1 class="text-white mb-4" style="color: black; background-color: rgb(13, 0, 255);">Add Product</h1>
+  
+          <div class="card" style="border-radius: 15px; background-color: rgb(85, 220, 94);">
+            <div class="card-body">
+  
+              <div class="row align-items-center pt-4 pb-3">
+                <div class="col-md-3 ps-5">
+  
+                  <h6 class="mb-0"> Product Name</h6>
+  
+                </div>
+                <div class="col-md-9 pe-5">
+  
+                  <input type="text" class="form-control form-control-lg" required name="pname" [(ngModel)]="product.name"  placeholder="Enter Product"/>
+  
+                </div>
+              </div>
+              <div class="row align-items-center pt-4 pb-3">
+                <div class="col-md-3 ps-5">
+  
+                  <h6 class="mb-0"> Product Type</h6>
+  
+                </div>
+                <div class="col-md-9 pe-5">
+  
+                  <input type="text" class="form-control form-control-lg" name="ptype" [(ngModel)]="product.type" placeholder="Enter Type" />
+  
+                </div>
+              </div>
+              <div class="row align-items-center pt-4 pb-3">
+                <div class="col-md-3 ps-5">
+  
+                  <h6 class="mb-0"> Product ID</h6>
+  
+                </div>
+                <div class="col-md-9 pe-5">
+  
+                  <input type="number" class="form-control form-control-lg" name="pid" [(ngModel)]="product.ids" placeholder="Enter ID"/>
+  
+                </div>
+              </div>
+              <div class="row align-items-center pt-4 pb-3">
+                <div class="col-md-3 ps-5">
+  
+                  <h6 class="mb-0"> Product Price</h6>
+  
+                </div>
+                <div class="col-md-9 pe-5">
+                    
+  
+                  <input type="number" class="form-control form-control-lg" placeholder="₹" name="pprice" [(ngModel)]="product.price" />
+  
+                </div>
+              </div>
+              <div class="row align-items-center pt-4 pb-3">
+                <div class="col-md-3 ps-5">
+  
+                  <h6 class="mb-0"> Product Quantity</h6>
+  
+                </div>
+                <div class="col-md-9 pe-5">
+  
+                  <input type="text" class="form-control form-control-lg" name="pquantity" [(ngModel)]="product.quantity" placeholder="Enter Product Quantity"/>
+  
+                </div>
+              </div>
+  
+             
+  
+              <!-- <div class="row align-items-center py-3">
+                <div class="col-md-3 ps-5">
+  
+                  <h6 class="mb-0">Product Image</h6>
+  
+                </div>
+                <div class="col-md-9 pe-5">
+  
+                  <input class="form-control form-control-lg" id="formFileLg" type="file" name="ppic" [(ngModel)]="product.pic" />
+                  <div class="small text-muted mt-2"></div>
+  
+                </div>
+              </div> -->
+  
+              <hr class="mx-n3">
+  
+              <div class="px-5 py-4">
+                <button type="submit" class="btn btn-primary btn-lg">ADD</button>
+              </div>
+  
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  </section>
+</form>

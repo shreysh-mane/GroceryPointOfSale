@@ -15,6 +15,7 @@ import { StaffhomeComponent } from './staff/staffhome/staffhome.component';
 import { ShowstaffComponent } from './admin/showstaff/showstaff.component';
 import { ShowproductsComponent } from './admin/product/showproducts/showproducts.component';
 import { UpdateProductComponent } from './admin/product/update-product/update-product.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { UpdateProductComponent } from './admin/product/update-product/update-pr
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
+    BrowserAnimationsModule,
  
    
     

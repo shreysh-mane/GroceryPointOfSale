@@ -23,7 +23,6 @@ public class LoginController {
 		
 		return LoginService.loginService(loginUser);
 		
-
 	}
 	
 }

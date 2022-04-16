@@ -6,21 +6,31 @@
     />
   </div> -->
   <div class="text-center mt-4 name">Grocery</div>
-  <form class="p-3 mt-3">
+  <form class="p-3 mt-3" (ngSubmit)="loginUser()">
     <div
       style="margin-bottom: 60px"
       class="form-field d-flex align-items-center"
     >
       <span class="far fa-user"></span>
-      <input type="text" name="userName" id="userName" placeholder="Username"
-      required
-      [(ngModel)]="user.username" />
+      <input
+        type="text"
+        name="userName"
+        id="userName"
+        placeholder="Username"
+        required
+        [(ngModel)]="user.email"
+      />
     </div>
     <div class="form-field d-flex align-items-center">
       <span class="fas fa-key"></span>
-      <input type="password" name="password" id="pwd" placeholder="Password" 
-      required
-      [(ngModel)]="user.password" />
+      <input
+        type="password"
+        name="password"
+        id="pwd"
+        placeholder="Password"
+        required
+        [(ngModel)]="user.mobile"
+      />
     </div>
     <button class="btn mt-3">Login</button>
   </form>

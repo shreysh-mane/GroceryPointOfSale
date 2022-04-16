@@ -18,10 +18,7 @@ public class LoginService implements LoginServiceInterface{
 	public String loginService(Staff loginUser) {
 		
 		
-		
 		loginRepository.save(loginUser);
-		
-		 
 		
 		Optional<Staff>loginUser1= Optional.ofNullable(loginRepository.findByIdandMobile(loginUser.getEmail(),loginUser.getMobile()));
 		 

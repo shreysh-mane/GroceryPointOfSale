@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import Swal from 'sweetalert2';
+import { LoginService } from '../services/login.service';
 
 @Component({
   selector: 'app-login',
@@ -8,14 +10,37 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private router:Router) { }
+  constructor(private _service:LoginService,private route:Router) { }
 
   ngOnInit(): void {
   }
-add(){
+  public user={
+    email:'',
+    state:'',
+    mobile:'',
+    account:'',
+    addhar :'',
+    role :'',
+  }
 
-  this.router.navigateByUrl('/RefreshComponent', { skipLocationChange: true }).then(() => {
-    this.router.navigate(['Your actualComponent']);
-});
+  loginUser(){
+
+  var result=this._service.loginUserFromRemote(this.user);
+
+  result.subscribe((data:any)=>{console.log(data)
+    localStorage.setItem("email",data);
+
+    if(data.toString()=="admin")
+    {
+      this.route.navigate(['./admin']);
+    }
+    else if(data.toString()=="faild"){
+        Swal.fire("login failed","OOPS login failed","error");
+    }
+    else
+    {
+      this.route.navigate(['./home']);
+    }
+  });
 }
 }

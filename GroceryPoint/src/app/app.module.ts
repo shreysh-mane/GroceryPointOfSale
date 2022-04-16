@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeadComponent } from './home/head/head.component';
-import { LoginComponent } from './admin/login/login.component';
+import { LoginComponent } from './login/login.component';
 import { AdminHomeComponent } from './admin/admin-home/admin-home.component';
 import { AddstaffComponent } from './admin/addstaff/addstaff.component';
 import { FormsModule } from '@angular/forms';
@@ -16,6 +16,9 @@ import { ShowstaffComponent } from './admin/showstaff/showstaff.component';
 import { ShowproductsComponent } from './admin/product/showproducts/showproducts.component';
 import { UpdateProductComponent } from './admin/product/update-product/update-product.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+
 
 @NgModule({
   declarations: [
@@ -31,6 +34,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ShowstaffComponent,
     ShowproductsComponent,
     UpdateProductComponent,
+ 
    
   ],
   imports: [
@@ -39,14 +43,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
- 
-   
+    MatInputModule,
+    MatFormFieldModule
     
-
-  
-
-   
-
     
   ],
   providers: [],

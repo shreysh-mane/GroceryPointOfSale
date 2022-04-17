@@ -8,10 +8,15 @@ import { ShowstaffComponent } from './admin/showstaff/showstaff.component';
 
 import { UpdatestaffComponent } from './admin/updatestaff/updatestaff.component';
 import { HeadComponent } from './home/head/head.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
   {path:"",
-component:HeadComponent},
+  component:LoginComponent},
+  {path:"admin",
+  component:HeadComponent},
+  {path:"home",
+  component:HeadComponent},
    {path:"addstaff", 
    component:AddstaffComponent
   },

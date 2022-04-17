@@ -7,7 +7,6 @@ import lombok.Data;
 
 @Entity
 @Data
-
 public class Staff {
 	public String getName() {
 		return name;

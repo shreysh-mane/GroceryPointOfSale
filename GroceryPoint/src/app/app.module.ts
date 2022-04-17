@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeadComponent } from './home/head/head.component';
-import { LoginComponent } from './admin/login/login.component';
+import { LoginComponent } from './login/login.component';
 import { AdminHomeComponent } from './admin/admin-home/admin-home.component';
 import { AddstaffComponent } from './admin/addstaff/addstaff.component';
 import { FormsModule } from '@angular/forms';
@@ -15,6 +15,10 @@ import { StaffhomeComponent } from './staff/staffhome/staffhome.component';
 import { ShowstaffComponent } from './admin/showstaff/showstaff.component';
 import { ShowproductsComponent } from './admin/product/showproducts/showproducts.component';
 import { UpdateProductComponent } from './admin/product/update-product/update-product.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+
 
 @NgModule({
   declarations: [
@@ -30,6 +34,7 @@ import { UpdateProductComponent } from './admin/product/update-product/update-pr
     ShowstaffComponent,
     ShowproductsComponent,
     UpdateProductComponent,
+ 
    
   ],
   imports: [
@@ -37,14 +42,10 @@ import { UpdateProductComponent } from './admin/product/update-product/update-pr
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
- 
-   
+    BrowserAnimationsModule,
+    MatInputModule,
+    MatFormFieldModule
     
-
-  
-
-   
-
     
   ],
   providers: [],

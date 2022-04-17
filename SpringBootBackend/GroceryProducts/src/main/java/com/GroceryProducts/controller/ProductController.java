@@ -49,7 +49,7 @@ public class ProductController {
 
 	
 	@PutMapping("/update/{pid}")
-	public String updateProduct(@PathVariable("pid") int ids,@RequestBody ProductsOfGrocery pd) {
+	public String updateProduct(@PathVariable("pid") long ids,@RequestBody ProductsOfGrocery pd) {
 		pd.setIds(ids);
 		int i=psi.updateProduct(pd);
 		return "update product details";
@@ -57,7 +57,7 @@ public class ProductController {
 
 	
 	@DeleteMapping("/delete/{sid}")
-	public String deleteProduct(@PathVariable("sid") int ids) {
+	public String deleteProduct(@PathVariable("sid") long ids) {
 		ProductsOfGrocery pd=new ProductsOfGrocery();
 		pd.setIds(ids);
 		psi.deleteProduct(pd);

@@ -18,6 +18,7 @@ import { UpdateProductComponent } from './admin/product/update-product/update-pr
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { ForgetpassComponent } from './forgetpass/forgetpass.component';
 
 
 @NgModule({
@@ -34,6 +35,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     ShowstaffComponent,
     ShowproductsComponent,
     UpdateProductComponent,
+    ForgetpassComponent,
  
    
   ],

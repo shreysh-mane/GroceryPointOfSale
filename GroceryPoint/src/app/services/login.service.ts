@@ -16,4 +16,8 @@ export class LoginService {
   {
     return  this._http.post(this.baseUrl,user,{responseType:'text' as 'json'});
   }
+
+  forgetPasswordSercive(user:any){
+    return  this._http.post(`${this.baseUrl}/forget`,user,{responseType:'text' as 'json'});
+  }
 }

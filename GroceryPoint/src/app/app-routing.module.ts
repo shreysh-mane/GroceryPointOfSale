@@ -7,12 +7,17 @@ import { UpdateProductComponent } from './admin/product/update-product/update-pr
 import { ShowstaffComponent } from './admin/showstaff/showstaff.component';
 
 import { UpdatestaffComponent } from './admin/updatestaff/updatestaff.component';
+import { ForgetpassComponent } from './forgetpass/forgetpass.component';
 import { HeadComponent } from './home/head/head.component';
 import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
   {path:"",
   component:LoginComponent},
+  {
+  path:"forget",
+  component:ForgetpassComponent
+  },
   {path:"admin",
   component:HeadComponent},
   {path:"home",

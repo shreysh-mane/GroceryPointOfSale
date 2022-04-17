@@ -24,5 +24,9 @@ public class LoginController {
 		return LoginService.loginService(loginUser);
 		
 	}
+	@PostMapping("/forget")
+	public String forgetpassController(@RequestBody Staff loginUser) {
+		return LoginService.forgetPassService(loginUser);
+	}
 	
 }

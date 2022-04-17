@@ -1,0 +1,25 @@
+<div class="wrapper">
+  <div class="text-center mt-4 name">
+    Grocery<br /><br />
+    Forget password
+  </div>
+  <form class="p-3 mt-3" (ngSubmit)="forgetPassUser()">
+    <div
+      style="margin-bottom: 60px"
+      class="form-field d-flex align-items-center"
+    >
+      <span class="far fa-user"></span>
+      <input
+        type="text"
+        name="userName"
+        id="userName"
+        placeholder="Username"
+        required
+        [(ngModel)]="user.email"
+      />
+    </div>
+
+    <button class="btn mt-3">Send password</button>
+  </form>
+  <a routerLink="/"> <button class="btn mt-3">Login</button></a>
+</div>

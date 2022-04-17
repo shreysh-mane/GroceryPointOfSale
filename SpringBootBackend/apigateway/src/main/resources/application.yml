@@ -7,15 +7,51 @@ eureka:
     
 spring:
   application:
-    name: api-gateway
+    name: API-GATEWAY
   cloud:
-    geteway:
-       routes:
-         - id: staff-service
-           uri: lb://staff-service
-           predicates: 
-             - Path=grocery/api/staff/**
-         - id: PRODUCT-SERVICE
-           uri: lb://PRODUCT-SERVICE
-           preidcates:
-             - Path=/grocery/api/product/**
+    gateway:
+      globalcors:
+        cors-configurations:
+          '[/**]':
+              allowedOrigins: "*"
+              allowedMethods: "*"
+              allowedHeaders: "*"
+      routes:
+      - id: staff-service
+        uri:
+          lb://staff-service
+        predicates:
+        - Path=/grocery/api/staff/**
+        filters:
+        - name: CircuitBreaker
+          args:
+            name: staff-service
+            fallbackuri: forward:/staffServiceFallBack
+      - id: PRODUCT-SERVICE
+        uri:
+          lb://PRODUCT-SERVICE
+        predicates:
+        - Path=/grocery/api/product/**
+        filters:
+        - name: CircuitBreaker
+          args:
+            name: PRODUCT-SERVICE
+            fallbackuri: forward:/departmentServiceFallBack
+      - id: LOGIN-SERVICE 
+        uri:
+          lb://LOGIN-SERVICE
+        predicates:
+        - Path=/grocery/api/login/**
+        filters:
+        - name: CircuitBreaker
+          args:
+            name: LOGIN-SERVICE
+            fallbackuri: forward:/loginServiceFallBack
+            
+    
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream         

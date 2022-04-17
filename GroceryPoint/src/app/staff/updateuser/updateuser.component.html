@@ -4,13 +4,13 @@
 <!------ Include the above in your HEAD tag ---------->
 
 <form (ngSubmit)="updateuser()">
-  <label>
+  <!-- <label>
     <p class="label-txt">Id</p>
     <input type="number" class="input" name="number" [(ngModel)]="update.id">
     <div class="line-box">
       <div class="line"></div>
     </div>
-  </label>
+  </label> -->
   <label>
     <p class="label-txt"> Name</p>
     <input type="text" class="input" name="fname" [(ngModel)]="update.name">
@@ -25,27 +25,27 @@
       <div class="line"></div>
     </div>
   </label>
-  <label>
+  <!-- <label>
     <p class="label-txt">Email</p>
     <input type="date" class="input" name="dob" [(ngModel)]="update.email">
     <div class="line-box">
       <div class="line"></div>
     </div>
-  </label>
-  <label>
+  </label> -->
+   <label>
     <p class="label-txt">Phone number</p>
-    <input type="text" class="input" name="branch" [(ngModel)]="update.phnum">
+    <input type="number" class="input" name="branch" [(ngModel)]="update.phnum">
     <div class="line-box">
       <div class="line"></div>
     </div>
-  </label>
-  <label>
+  </label>  
+   <!--<label>
     <p class="label-txt">Timestamp</p>
     <input type="email" class="input" name="email" [(ngModel)]="update.timestamp">
     <div class="line-box">
       <div class="line"></div>
     </div>
-  </label>
-  <button type="submit">Add</button>
+  </label>  -->
+  <button type="submit">UPDATE</button>
   <button type="reset">clear-form</button>
-</form>
+</form> 

@@ -11,7 +11,7 @@ export class SearchuserService {
   constructor(private http:HttpClient) { 
 
   }
-  searchuser(search:Userentity){
-  return this.http.post(this.baseUrl,search,{ responseType:'text' as 'json'})
+  searchuser(search:Userentity,phnum:any){
+  return this.http.put(`${this.baseUrl}/${phnum}`,search,{ responseType:'text' as 'json'})
   }
 }

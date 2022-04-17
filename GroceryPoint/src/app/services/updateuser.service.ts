@@ -6,7 +6,7 @@ import { Userentity } from '../entity/userentity';
   providedIn: 'root'
 })
 export class UpdateuserService {
-private baseUrl=""
+private baseUrl="http://localhost:9004/api/grocery/customer/updatecustomers"
   constructor(private upd:HttpClient) {
 
    }

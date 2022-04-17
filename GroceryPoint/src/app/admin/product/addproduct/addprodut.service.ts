@@ -7,7 +7,7 @@ import { Produtentity } from './produtentity';
 })
 export class AddprodutService {
 
-  private baseUrl="http://localhost:10015/products/add";
+  private baseUrl="http://localhost:9000/grocery/api/product/add";
   constructor(private http:HttpClient) { }
 
 

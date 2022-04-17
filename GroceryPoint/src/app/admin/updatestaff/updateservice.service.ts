@@ -7,7 +7,7 @@ import { Updateentity } from './updateentity';
 })
 export class UpdateserviceService {
 
-  private baseUrl="http://localhost:10013/grocery/updateStaff";
+  private baseUrl="http://localhost:9000/grocery/api/staff/updateStaff";
   constructor(private http:HttpClient) { }
 
   updatestaff(update:Updateentity,email:any){

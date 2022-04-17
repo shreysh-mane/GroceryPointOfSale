@@ -7,7 +7,7 @@ import { Staffentity } from './staffentity';
 })
 export class StaffServiceService {
 
-  private baseUrl="http://localhost:10013/grocery/addstaff"
+  private baseUrl="http://localhost:9000/grocery/api/staff/addstaff"
   constructor(private http:HttpClient) { }
 
 
@@ -16,7 +16,5 @@ export class StaffServiceService {
 
   }
 
-  // dealeradd(dealer:Dealerentity){
-  //   return this.http.post(this.baseUrl,dealer,{responseType:'text' as 'json'});
-
+ 
 }

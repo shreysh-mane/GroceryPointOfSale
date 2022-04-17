@@ -8,6 +8,14 @@ import lombok.Data;
 @Entity
 @Data
 public class Staff {
+	@Id
+	private String email;
+	private String state;
+	private Long mobile;
+	private Long account;
+	private Long addhar;
+	private String role;
+	
 	public String getName() {
 		return name;
 	}
@@ -51,12 +59,7 @@ public class Staff {
 
 	private String name;
 	
-	@Id
-	private String email;
-	private String state;
-	private Long mobile;
-	private Long account;
-	private Long addhar;
+
 	
 	
 	

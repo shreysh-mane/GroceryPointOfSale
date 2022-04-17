@@ -8,7 +8,7 @@ import { Updateentity } from './updateentity';
 })
 export class UpdateserviceService {
 
-  private url="http://localhost:10015/products/update";
+  private url="http://localhost:9000/grocery/api/product/update";
   constructor(private http:HttpClient) { }
 
   updateprd(edit:Updateentity,ids:any){

@@ -6,6 +6,7 @@ export class Staffentity {
     mobile?:number;
     account?:number;
     addhar?:number;
+    role?:string;
 
 
 }

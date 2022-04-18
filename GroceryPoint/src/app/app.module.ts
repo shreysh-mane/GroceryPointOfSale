@@ -19,6 +19,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { ForgetpassComponent } from './forgetpass/forgetpass.component';
+import { AdduserComponent } from './staff/adduser/adduser.component';
+import { SearchuserComponent } from './staff/searchuser/searchuser.component';
+import { UpdateuserComponent } from './staff/updateuser/updateuser.component';
+import { ViewuserComponent } from './staff/viewuser/viewuser.component';
 
 
 @NgModule({
@@ -36,6 +40,11 @@ import { ForgetpassComponent } from './forgetpass/forgetpass.component';
     ShowproductsComponent,
     UpdateProductComponent,
     ForgetpassComponent,
+    AdduserComponent,
+    SearchuserComponent,
+    UpdateuserComponent,
+    ViewuserComponent,
+  
  
    
   ],

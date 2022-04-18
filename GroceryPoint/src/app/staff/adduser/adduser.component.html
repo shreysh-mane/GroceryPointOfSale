@@ -4,16 +4,16 @@
 <!------ Include the above in your HEAD tag ---------->
 
 <form (ngSubmit)="addcustomer()">
-  <label>
+  <!-- <label>
     <p class="label-txt">Id</p>
     <input type="number" class="input" name="number" [(ngModel)]="User.id">
     <div class="line-box">
       <div class="line"></div>
     </div>
-  </label>
-  <label>
+  </label>-->
+  <label> 
     <p class="label-txt"> Name</p>
-    <input type="text" class="input" name="fname" [(ngModel)]="User.name">
+    <input type="text" class="input" name="name" [(ngModel)]="User.name" />
     <div class="line-box">
       <div class="line"></div>
     </div>
@@ -27,7 +27,7 @@
   </label>
   <label>
     <p class="label-txt">Email</p>
-    <input type="date" class="input" name="dob" [(ngModel)]="User.email">
+    <input type="text" class="input" name="email" [(ngModel)]="User.email">
     <div class="line-box">
       <div class="line"></div>
     </div>
@@ -39,13 +39,13 @@
       <div class="line"></div>
     </div>
   </label>
-  <label>
+  <!-- <label>
     <p class="label-txt">Timestamp</p>
     <input type="email" class="input" name="email" [(ngModel)]="User.timestamp">
     <div class="line-box">
       <div class="line"></div>
     </div>
-  </label>
+  </label> -->
   <button type="submit">Add</button>
   <button type="reset">clear-form</button>
 </form>

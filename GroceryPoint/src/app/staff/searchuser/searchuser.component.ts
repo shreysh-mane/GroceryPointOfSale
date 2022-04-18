@@ -19,7 +19,7 @@ export class SearchuserComponent implements OnInit {
     this.searchusers()
   }
   searchusers(){
-    var result=this.show.searchuser(this.user)
+    var result=this.show.searchuser(this.user,this.user.phnum)
     result.subscribe((data:any)=>console.log(data));
      // Swal.fire("Good Job","Address Updated","success");
 

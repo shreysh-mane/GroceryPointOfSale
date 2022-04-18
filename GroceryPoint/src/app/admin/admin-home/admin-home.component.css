@@ -1,34 +1,4 @@
-.nav-side-menu {
-    overflow: auto;
-    font-family: verdana;
-    font-size: 12px;
-    font-weight: 200;
-    background-color: #2e353d;
-    position: fixed;
-    top: 0px;
-    width: 300px;
-    height: 100%;
-    color: #e1ffff;
-  }
-  .nav-side-menu .brand {
-    background-color: #23282e;
-    line-height: 50px;
-    display: block;
-    text-align: center;
-    font-size: 14px;
-  }
-  .nav-side-menu .toggle-btn {
-    display: none;
-  }
-  .nav-side-menu ul,
-  .nav-side-menu li {
-    list-style: none;
-    padding: 0px;
-    margin: 0px;
-    line-height: 35px;
-    cursor: pointer;
-    
-  }
+
   .nav-side-menu ul :not(collapsed) .arrow:before,
   .nav-side-menu li :not(collapsed) .arrow:before {
     font-family: FontAwesome;

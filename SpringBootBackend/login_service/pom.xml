@@ -85,6 +85,7 @@
         </configuration>
       </plugin>
     </plugins>
+    	<finalName>spring-login</finalName>
   </build>
 
 </project>

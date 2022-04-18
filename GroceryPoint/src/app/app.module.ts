@@ -23,6 +23,8 @@ import { AdduserComponent } from './staff/adduser/adduser.component';
 import { UpdateuserComponent } from './staff/updateuser/updateuser.component';
 import { ViewuserComponent } from './staff/viewuser/viewuser.component';
 import { ShareComponent } from './share/share.component';
+//import { SearchuserComponent } from './staff/searchuser/searchuser.component';
+
 
 
 @NgModule({
@@ -43,7 +45,8 @@ import { ShareComponent } from './share/share.component';
     AdduserComponent,
     UpdateuserComponent,
     ViewuserComponent,
-    ShareComponent
+    ShareComponent,
+  //  SearchuserComponent,
   
  
    

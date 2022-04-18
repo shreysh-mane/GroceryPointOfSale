@@ -15,19 +15,19 @@
 
 //    }
 
-//   ngOnInit(): void {
-//   this.searchusers(this.user.phnum);
-//   }
-//   searchusers(phnum:any){
-//     console.log(this.users.phnum);
+//   ngOnInit(): void {}
+  //this.searchusers1(this.user.phnum);
+  
+  //searchusers1(phnum:any){
+    //console.log(this.users.phnum);
 
-//     var ph=Number(phnum);
+    //var ph=Number(phnum);
 
-//     var result=this.show.searchuser(ph)
-//     result.subscribe((data:any)=>console.log(data));
-//      // Swal.fire("Good Job","Address Updated","success");
+    // var result=this.show.searchuser(phnum)
+    // result.subscribe((data:any)=>console.log(data));
+    // Swal.fire("Good Job","Address Updated","success");
 
-//   }
-// }
+ // }
+
 
 

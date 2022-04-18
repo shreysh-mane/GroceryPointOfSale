@@ -1,3 +1,4 @@
+import { ThrowStmt } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { Userentity } from '../entity/userentity';
 import { SearchuserService } from '../services/searchuser.service';
@@ -32,7 +33,7 @@ export class ShareComponent implements OnInit {
 
 
     var result=this.show.searchuser(phnum);
-    result.subscribe((data)=>console.log(data));
+    result.subscribe((data)=>alert(data +"      customer exist"));
      // Swal.fire("Good Job","Address Updated","success");
 
   }

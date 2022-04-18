@@ -77,7 +77,7 @@ public class ProducerStaffController {
 		
 		
 		@GetMapping("/searchcustomers/{phnum}")
-		public ResponseEntity<String> searchcustomers(@PathVariable(value= "phnum") String phnum) throws Exception
+		public ResponseEntity<ProducerGrocery> searchcustomers(@PathVariable(value= "phnum") String phnum) throws Exception
 		{
 			long ph=Long.parseLong(phnum);
 			System.out.println(ph);
@@ -89,7 +89,7 @@ public class ProducerStaffController {
 				throw new Exception("User Cannot Found");
 			}
 				
-			return new ResponseEntity<>(email,HttpStatus.OK);
+			return new ResponseEntity<>(userdetails,HttpStatus.OK);
 			
 		}
 		

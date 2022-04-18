@@ -8,6 +8,6 @@ export class ViewusersService {
 
   constructor( private http:HttpClient) { }
   async details(){
-    return await this.http.get("");
+    return await this.http.get("http://localhost:9000/grocery/api/customer/viewcustomer");
   }
 }

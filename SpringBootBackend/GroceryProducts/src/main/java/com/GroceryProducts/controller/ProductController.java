@@ -20,7 +20,7 @@ import com.GroceryProducts.service.ProductServicesInterface;
 
 @RestController
 @RequestMapping("/api/product")
-@CrossOrigin("http://localhost:4200")
+@CrossOrigin("*")
 public class ProductController {
 	
 	

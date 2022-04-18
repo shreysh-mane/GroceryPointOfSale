@@ -19,17 +19,17 @@ spring:
       routes:
       - id: staff-service
         uri:
-          lb://staff-service
+          http://localhost:9001
         predicates:
         - Path=/grocery/api/staff/**
       - id: PRODUCT-SERVICE
         uri:
-          lb://PRODUCT-SERVICE
+          http://localhost:9002
         predicates:
         - Path=/grocery/api/product/**
       - id: LOGIN-SERVICE 
         uri:
-          lb://LOGIN-SERVICE
+          http://localhost:9003
         predicates:
         - Path=/grocery/api/login/**
       

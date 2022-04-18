@@ -19,7 +19,7 @@ import com.Grocery.entity.Staff;
 import com.Grocery.service.AdminServiceInterface;
 @RestController
 @RequestMapping("/api/staff")
-@CrossOrigin("http://localhost:4200")
+@CrossOrigin("*")
 public class AdminController {
 	@Autowired
 	private AdminServiceInterface asi;

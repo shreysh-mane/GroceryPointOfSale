@@ -6,12 +6,15 @@ import { Userentity } from '../entity/userentity';
   providedIn: 'root'
 })
 export class SearchuserService {
+user=new Userentity();
 
   private baseUrl="http://localhost:9004/api/grocery/customer/searchcustomers"
   constructor(private http:HttpClient) { 
 
   }
-  searchuser(search:Userentity,phnum:any){
-  return this.http.put(`${this.baseUrl}/${phnum}`,search,{ responseType:'text' as 'json'})
+  searchuser(phnum:string){
+    console.log(phnum);
+  return this.http.get("http://localhost:9004/api/grocery/customer/searchcustomers/"+phnum,{responseType:'text'})
+  
   }
 }

@@ -11,10 +11,10 @@ export class ViewserviceService {
    }
    async showusers(){
 
-    return await this.view.get("");
+    return await this.view.get("http://localhost:9004/api/grocery/customer/viewcustomers");
   }
   public deleteuser(phnum:number){
-    return this.view.delete(""+phnum)
+    return this.view.delete("http://localhost:9004/api/grocery/customer/deletecustomers/"+phnum)
   }
 }
 

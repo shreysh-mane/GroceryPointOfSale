@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Userentity } from '../entity/userentity';
+import { SearchuserService } from '../services/searchuser.service';
 
 @Component({
   selector: 'app-share',
@@ -7,9 +9,32 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ShareComponent implements OnInit {
 
-  constructor() { }
+  users:any=[];
+  public user:Userentity;
+  constructor(private show:SearchuserService) {
+    this.user=new Userentity();
+
+   }
 
   ngOnInit(): void {
+    this.searchusers(this.users.phnum);
+  }
+  searchusers(phnum:string){
+    //console.log(parseInt(phnum));
+    var ph=parseInt(phnum);
+    console.log(ph);
+
+    if(!isNaN(Number(ph))){
+      var ph = Number(ph);
+    } else{
+        console.log('Not a Number');
+    }
+
+
+    var result=this.show.searchuser(phnum);
+    result.subscribe((data)=>console.log(data));
+     // Swal.fire("Good Job","Address Updated","success");
+
   }
 
 }

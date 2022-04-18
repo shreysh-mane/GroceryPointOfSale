@@ -12,7 +12,7 @@ import { HeadComponent } from './home/head/head.component';
 import { LoginComponent } from './login/login.component';
 import { ShareComponent } from './share/share.component';
 import { AdduserComponent } from './staff/adduser/adduser.component';
-import { SearchuserComponent } from './staff/searchuser/searchuser.component';
+//import { SearchuserComponent } from './staff/searchuser/searchuser.component';
 import { UpdateuserComponent } from './staff/updateuser/updateuser.component';
 import { ViewuserComponent } from './staff/viewuser/viewuser.component';
 
@@ -58,10 +58,10 @@ const routes: Routes = [
     component:AdduserComponent
   },
   
-  {
-    path:"searchuser",
-    component:SearchuserComponent
-  },
+  // {
+  //   path:"searchuser",
+  //   component:SearchuserComponent
+  // },
 
   {
     path:"updateuser",
@@ -73,27 +73,29 @@ const routes: Routes = [
     component:ViewuserComponent
   },
 
+  { path:"share",component:ShareComponent},
+
   // {
   //   path:"deleteuser",
   //   component:DeleteuserComponent
   // }
   
-  {
-    path:"share",component:ShareComponent,
+  // {
+  //   path:"share",component:ShareComponent,
 
-    children: [
-      {
-        path:"searchuser",
-        component:SearchuserComponent,
-      },
-      {
-        path:"updateuser",
-        component:UpdateuserComponent, // another child route component that the router renders
-      },
-    ],
+  //   children: [
+  //     {
+  //       path:"searchuser",
+  //       component:SearchuserComponent,
+  //     },
+  //     {
+  //       path:"updateuser",
+  //       component:UpdateuserComponent, // another child route component that the router renders
+  //     },
+  //   ],
 
 
-  },
+  // },
   
   
 ];

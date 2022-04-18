@@ -26,7 +26,7 @@ const routes: Routes = [
   {path:"admin",
   component:HeadComponent},
   {path:"home",
-  component:HeadComponent},
+  component:ShareComponent},
    {path:"addstaff", 
    component:AddstaffComponent
   },

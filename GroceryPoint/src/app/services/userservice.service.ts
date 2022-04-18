@@ -7,7 +7,7 @@ import { Userentity } from 'src/app/entity/userentity';
 })
 export class UserserviceService {
 
-  private baseUrl="http://localhost:9004/api/grocery/customer/saveuser"
+  private baseUrl="http://localhost:9000/grocery/api/customer/saveuser"
   constructor(private http:HttpClient) { 
 
   }

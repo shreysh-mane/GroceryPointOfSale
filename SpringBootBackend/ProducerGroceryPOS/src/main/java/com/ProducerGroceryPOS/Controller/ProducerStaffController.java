@@ -26,8 +26,8 @@ import java.util.*;
 
 
 @RestController
-@RequestMapping("/api/grocery/customer")
-@CrossOrigin("http://localhost:4200")
+@RequestMapping("/api/customer")
+@CrossOrigin("*")
 public class ProducerStaffController {
 
 	@Autowired

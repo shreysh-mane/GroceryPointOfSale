@@ -16,8 +16,6 @@ import { ShowstaffComponent } from './admin/showstaff/showstaff.component';
 import { ShowproductsComponent } from './admin/product/showproducts/showproducts.component';
 import { UpdateProductComponent } from './admin/product/update-product/update-product.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatInputModule} from '@angular/material/input';
-import {MatFormFieldModule} from '@angular/material/form-field';
 
 
 @NgModule({
@@ -43,8 +41,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    MatInputModule,
-    MatFormFieldModule
+  
     
     
   ],

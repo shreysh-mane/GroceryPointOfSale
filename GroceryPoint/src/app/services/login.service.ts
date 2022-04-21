@@ -7,7 +7,7 @@ import {HttpClient} from '@angular/common/http'
 })
 export class LoginService {
 
-  private baseUrl="http://localhost:9003/grocery/api/login";
+  private baseUrl="http://localhost:9000/grocery/api/login";
   
 
   constructor(private _http : HttpClient) { }
@@ -15,5 +15,9 @@ export class LoginService {
   loginUserFromRemote(user:any)
   {
     return  this._http.post(this.baseUrl,user,{responseType:'text' as 'json'});
+  }
+
+  forgetPasswordSercive(user:any){
+    return  this._http.post(`${this.baseUrl}/forget`,user,{responseType:'text' as 'json'});
   }
 }

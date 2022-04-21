@@ -16,6 +16,18 @@ import { ShowstaffComponent } from './admin/showstaff/showstaff.component';
 import { ShowproductsComponent } from './admin/product/showproducts/showproducts.component';
 import { UpdateProductComponent } from './admin/product/update-product/update-product.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+<<<<<<< HEAD
+=======
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { ForgetpassComponent } from './forgetpass/forgetpass.component';
+import { AdduserComponent } from './staff/adduser/adduser.component';
+import { UpdateuserComponent } from './staff/updateuser/updateuser.component';
+import { ViewuserComponent } from './staff/viewuser/viewuser.component';
+import { ShareComponent } from './share/share.component';
+//import { SearchuserComponent } from './staff/searchuser/searchuser.component';
+
+>>>>>>> 9902334d01e52c272550729fd2a1ee8919af568f
 
 
 @NgModule({
@@ -32,6 +44,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ShowstaffComponent,
     ShowproductsComponent,
     UpdateProductComponent,
+    ForgetpassComponent,
+    AdduserComponent,
+    UpdateuserComponent,
+    ViewuserComponent,
+    ShareComponent,
+  //  SearchuserComponent,
+  
  
    
   ],

@@ -27,20 +27,23 @@ export class LoginComponent implements OnInit {
 
   var result=this._service.loginUserFromRemote(this.user);
 
-  result.subscribe((data:any)=>{console.log(data)
-    localStorage.setItem("email",data);
+  result.subscribe((data:any)=>{
+    console.log(data)
+    localStorage.setItem("staffemail",this.user.email);
 
     if(data.toString()=="admin")
     {
       this.route.navigate(['./admin']);
     }
     else if(data.toString()=="faild"){
-        Swal.fire("login failed","OOPS login failed","error");
+        Swal.fire("login failed","wrong Password","error");
     }
     else
     {
       this.route.navigate(['./home']);
     }
+  },(error)=>{
+    Swal.fire("login failed","something went wrong","error");
   });
 }
 }

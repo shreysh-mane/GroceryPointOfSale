@@ -1,0 +1,51 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<form (ngSubmit)="updateuser()">
+  <!-- <label>
+    <p class="label-txt">Id</p>
+    <input type="number" class="input" name="number" [(ngModel)]="update.id">
+    <div class="line-box">
+      <div class="line"></div>
+    </div>
+  </label> -->
+  <label>
+    <p class="label-txt"> Name</p>
+    <input type="text" class="input" name="fname" [(ngModel)]="update.name">
+    <div class="line-box">
+      <div class="line"></div>
+    </div>
+  </label>
+  <label>
+    <p class="label-txt">NumOfProducts</p>
+    <input type="text" class="input" name="lname" [(ngModel)]="update.numOfProducts">
+    <div class="line-box">
+      <div class="line"></div>
+    </div>
+  </label>
+  <!-- <label>
+    <p class="label-txt">Email</p>
+    <input type="date" class="input" name="dob" [(ngModel)]="update.email">
+    <div class="line-box">
+      <div class="line"></div>
+    </div>
+  </label> -->
+   <label>
+    <p class="label-txt">Phone number</p>
+    <input type="number" class="input" name="branch" [(ngModel)]="update.phnum">
+    <div class="line-box">
+      <div class="line"></div>
+    </div>
+  </label>  
+   <!--<label>
+    <p class="label-txt">Timestamp</p>
+    <input type="email" class="input" name="email" [(ngModel)]="update.timestamp">
+    <div class="line-box">
+      <div class="line"></div>
+    </div>
+  </label>  -->
+  <button type="submit">UPDATE</button>
+  <button type="reset">clear-form</button>
+</form> 

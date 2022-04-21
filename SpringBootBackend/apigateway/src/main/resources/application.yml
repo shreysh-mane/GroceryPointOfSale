@@ -7,15 +7,37 @@ eureka:
     
 spring:
   application:
-    name: api-gateway
+    name: API-GATEWAY
   cloud:
-    geteway:
-       routes:
-         - id: staff-service
-           uri: lb://staff-service
-           predicates: 
-             - Path=grocery/api/staff/**
-         - id: PRODUCT-SERVICE
-           uri: lb://PRODUCT-SERVICE
-           preidcates:
-             - Path=/grocery/api/product/**
+    gateway:
+      globalcors:
+        cors-configurations:
+          '[/**]':
+              allowedOrigins: "*"
+              allowedMethods: "*"
+              allowedHeaders: "*"
+      routes:
+      - id: staff-service
+        uri:
+          http://localhost:9001
+        predicates:
+        - Path=/grocery/api/staff/**
+      - id: PRODUCT-SERVICE
+        uri:
+          http://localhost:9002
+        predicates:
+        - Path=/grocery/api/product/**
+      - id: LOGIN-SERVICE 
+        uri:
+          http://localhost:9003
+        predicates:
+        - Path=/grocery/api/login/**
+      - id: customer-service
+        uri:
+          http://localhost:9004
+        predicates:
+        - Path=/grocery/api/customer/**
+      
+            
+    
+  

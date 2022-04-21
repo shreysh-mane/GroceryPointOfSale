@@ -19,8 +19,7 @@ import com.Grocery.entity.Staff;
 import com.Grocery.service.AdminServiceInterface;
 @RestController
 @RequestMapping("/api/staff")
-@CrossOrigin("http://localhost:9001")
-// http://localhost:9001/grocery/api/staff
+@CrossOrigin("*")
 public class AdminController {
 	@Autowired
 	private AdminServiceInterface asi;
@@ -30,6 +29,8 @@ public class AdminController {
 	//staff
 	@PostMapping("addstaff")
 	public String AddStaff(@RequestBody Staff sf) {
+		sf.setRole("staff");
+		System.out.print(sf.getEmail());
 		int i=asi.AddStaff(sf);
 		if(i>0) {
 			return "staff is added sucessfuly";
@@ -39,6 +40,7 @@ public class AdminController {
 		}
 	}
 	
+	
 	@GetMapping("showStaff")
 	public List<Staff> showStaff(){
 		List<Staff> ll=asi.showStaffservice();
@@ -47,6 +49,7 @@ public class AdminController {
 	}
 	@PutMapping("updateStaff/{sid}")
 	public String updateStaff(@PathVariable("sid") String email,@RequestBody Staff sf) {
+		sf.setRole("staff");
 		sf.setEmail(email);
 		int i=asi.updateStaff(sf);
 		return "update staff details";

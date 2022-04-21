@@ -5,6 +5,6 @@ import org.springframework.stereotype.Repository;
 
 import com.GroceryProducts.entity.ProductsOfGrocery;
 @Repository
-public interface productDAOREP extends JpaRepository<ProductsOfGrocery, Integer> {
+public interface productDAOREP extends JpaRepository<ProductsOfGrocery, Long> {
 
 }

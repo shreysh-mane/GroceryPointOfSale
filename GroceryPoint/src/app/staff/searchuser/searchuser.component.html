@@ -1,0 +1,24 @@
+<table class="table table-hover">
+  <thead class="table-dark">
+      <tr>
+          <th scope="col">Id</th>
+          <th scope="col">Name</th>
+          <th scope="col">NumOfProducts</th>
+          <th scope="col">Email</th>
+          <th scope="col">PhoneNumber</th>
+          <th scope="col">Time</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let a of users;">
+          <td>{{a.id}} </td>
+          <td>{{a.name}} </td>
+          <td>{{a.numOfProducts}} </td>
+          <td>{{a.email}} </td>
+          <td>{{a.phnum}} </td>
+          <td>{{a.timestamp}} </td>
+      </tr>
+  </tbody>
+</table>
+
+

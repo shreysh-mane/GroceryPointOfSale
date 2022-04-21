@@ -11,7 +11,7 @@ import com.login.entity.Staff;
 import com.login.service.LoginServiceInterface;
 
 
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/api/login")
 public class LoginController {
@@ -23,6 +23,10 @@ public class LoginController {
 		
 		return LoginService.loginService(loginUser);
 		
+	}
+	@PostMapping("/forget")
+	public String forgetpassController(@RequestBody Staff loginUser) {
+		return LoginService.forgetPassService(loginUser);
 	}
 	
 }

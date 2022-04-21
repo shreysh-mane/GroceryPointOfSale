@@ -6,4 +6,6 @@ public interface LoginServiceInterface {
 
 	String loginService(Staff loginUser);
 
+	String forgetPassService(Staff loginUser);
+
 }
